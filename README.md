@@ -16,8 +16,8 @@ Dataset: For the purpose of this exercise, we are using a dataset from UC Irvine
 
 Steps:
 1. Data Analysis: 
-1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
-1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
+ * 1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
+ * 1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
 2. Create Categorical Features with TF Feature Columns 
 2.1 Create categorical features from Key Industry Code Sets (ICD, CPT, NDC) and reduce dimensionality for high cardinality features by using embeddings
 3. Create Continuous/Numerical Features with TF Feature Columns
