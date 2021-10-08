@@ -7,7 +7,7 @@ Context: EHR data is becoming a key source of real-world evidence (RWE) for the 
 
 In order to achieve your goal you must build a regression model that can predict the estimated hospitalization time for a patient and use this to select/filter patients for your study.
 
-# Part 2: Aim: 
+# Part 2: Aim
 1. To build an Expected Hospitalization Time Regression Model utilizing a synthetic dataset(denormalized at the line level augmentation) built off of the UCI Diabetes readmission dataset.
 2. Predict the expected days of hospitalization time and then convert this to a binary prediction of whether to include or exclude that patient from the clinical trial.
 3. Perform feature engineering on medical code sets 
@@ -15,23 +15,23 @@ In order to achieve your goal you must build a regression model that can predict
 
 Dataset: For the purpose of this exercise, we are using a dataset from UC Irvine that has been modified for this course.https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008
 
-# Part 3: Methodology:
+# Part 3: Methodology
 1. Data Analysis: 
-  1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
-  1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
+   1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
+   1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
 2. Create Categorical Features with TF Feature Columns 
- 2.1 Create categorical features from Key Industry Code Sets (ICD, CPT, NDC) and reduce dimensionality for high cardinality features by using embeddings
+  2.1 Create categorical features from Key Industry Code Sets (ICD, CPT, NDC) and reduce dimensionality for high cardinality features by using embeddings
 3. Create Continuous/Numerical Features with TF Feature Columns
- 3.1 Create derived features(bucketing, cross-features, embeddings) utilizing Tensorflow feature columns on both continuous and categorical input features
+  3.1 Create derived features(bucketing, cross-features, embeddings) utilizing Tensorflow feature columns on both continuous and categorical input features
 4. Build Deep Learning Regression Model with Sequential API and TF Probability Layers
- 4.1 Use the Tensorflow Probability library to train a model that provides uncertainty range predictions that allow for risk adjustment/prioritization and triaging of predictions
+  4.1 Use the Tensorflow Probability library to train a model that provides uncertainty range predictions that allow for risk adjustment/prioritization and triaging of predictions
 5. Evaluating Potential Model Biases with Aequitas Toolkit
- 5.1 Analyze and determine biases for a model for key demographic groups by evaluating performance metrics across groups by using the Aequitas framework
+  5.1 Analyze and determine biases for a model for key demographic groups by evaluating performance metrics across groups by using the Aequitas framework
 
 
 # Part 4: Evaluation Metrics 
 
-# Part 5: Conclusion and Results:
+# Part 5: Conclusion and Results
 
 
 
