@@ -30,8 +30,33 @@ Dataset: For the purpose of this exercise, we are using a dataset from UC Irvine
 
 
 # Part 4: Evaluation Metrics 
+AUC score :  0.755331729927067
+F1 score :  0.770329175435986
+Precision score:  0.7709811146936896
+Recall score :  0.7709811146936896
+
+            precision    recall  f1-score   support
+
+           0       0.81      0.82      0.82      6683
+           1       0.71      0.69      0.70      4172
+
+    accuracy                           0.77     10855
+   macro avg       0.76      0.76      0.76     10855
+weighted avg       0.77      0.77      0.77     10855
 
 # Part 5: Conclusion and Results
+
+What are some areas of improvement for future iterations?
+- We could use a complex model with more layers like LSTM for prediction
+- We could impute missing values in the data by mean/mode/median/KNN imputation techniques instead of 0
+- We could perform better data preprocessing and feature selection, taking biases and skewness into consideration 
+- we could perform hyperparameter optimisation for seleccting better hyperparameters
+
+Considering PPR and TPR metrics, bias can be observed in both race and gender:
+
+- PPR: Predicted Positive Rate (Fraction of all positive predictions across groups that come from specific groups.) If we consider race, can clearly see a bias here since 'Caucasian' has the highest PPR compared to other races by quite a margin.
+
+- TPR: True Positive Rate If we consider gender, the 'Male' is likely to have higher selection relative to 'Female' since TPR is higher for Males. This implies that the model is likely to predict more Male patients for testing than females.
 
 
 
