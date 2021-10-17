@@ -15,16 +15,16 @@ Dataset: For the purpose of this exercise, we are using a dataset from UC Irvine
 
 # Part 3: Methodology
 1. Data Analysis: 
-   1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
-   1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
+      1.1 Use the Tensorflow Dataset API to scalably extract, transform, and load datasets and build datasets aggregated at the line, encounter, and patient data levels(longitudinal)
+      1.2 Analyze EHR datasets to check for common issues (data leakage, statistical properties, missing values, high cardinality) by performing exploratory data analysis.
 2. Create Categorical Features with TF Feature Columns 
-  2.1 Create categorical features from Key Industry Code Sets (ICD, CPT, NDC) and reduce dimensionality for high cardinality features by using embeddings
+     2.1 Create categorical features from Key Industry Code Sets (ICD, CPT, NDC) and reduce dimensionality for high cardinality features by using embeddings
 3. Create Continuous/Numerical Features with TF Feature Columns
-  3.1 Create derived features(bucketing, cross-features, embeddings) utilizing Tensorflow feature columns on both continuous and categorical input features
+     3.1 Create derived features(bucketing, cross-features, embeddings) utilizing Tensorflow feature columns on both continuous and categorical input features
 4. Build Deep Learning Regression Model with Sequential API and TF Probability Layers
-  4.1 Use the Tensorflow Probability library to train a model that provides uncertainty range predictions that allow for risk adjustment/prioritization and triaging of predictions
+     4.1 Use the Tensorflow Probability library to train a model that provides uncertainty range predictions that allow for risk adjustment/prioritization and triaging of predictions
 5. Evaluating Potential Model Biases with Aequitas Toolkit
-  5.1 Analyze and determine biases for a model for key demographic groups by evaluating performance metrics across groups by using the Aequitas framework
+     5.1 Analyze and determine biases for a model for key demographic groups by evaluating performance metrics across groups by using the Aequitas framework
 
 
 # Part 4: Evaluation Metrics 
